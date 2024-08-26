@@ -110,8 +110,7 @@ export default function Home() {
                 <h2 className='text-xl font-bold mb-2'>{country.name.common}</h2>
                 <p className='text-sm'>Population: {country.population.toLocaleString()}</p>
                 <p className='text-sm'>Region: {country.region}</p>
-                <p className='text-sm'>Capital: {country.capital?.join(', ') || 'No capital'}</p>
-
+                <p className='text-sm'>Capital: {country.capital.join(', ')}</p>
                 <div className="text-right mt-4">
                   <a href={`/about/${country.name.common.toLowerCase()}`} className="text-blue-500 hover:underline">
                     About this country
